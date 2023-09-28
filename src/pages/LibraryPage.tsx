@@ -1,17 +1,19 @@
 import React from 'react';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/react';
-import Menu from '../components/Menu';
-
-const LibraryPage = () => (
+import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { Footer } from '../components/Footer';
+const LibraryPage:React.FC = () => (
   <>
-  
-
-    <IonContent>
-      <div>
-        Library content
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sit qui possimus voluptatum autem saepe suscipit provident ex nulla quas dignissimos, rerum, consectetur enim voluptatibus libero aperiam animi eius labore!librarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrry</p>
-      </div>
-    </IonContent>
+    <IonPage>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>Library</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent>
+        <Footer/>
+      </IonContent>
+      
+    </IonPage>
   </>
 );
 

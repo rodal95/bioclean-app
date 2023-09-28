@@ -10,21 +10,15 @@ import {HomePage} from './HomePage';
 import RadioPage from './RadioPage';
 import LibraryPage from './LibraryPage';
 import SearchPage from './SearchPage';
-import Menu from '../components/Menu';
+
 const TabMenu: React.FC = () => {
 
   return (
-
-    <>
+  <>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
           <Redirect exact path="/tab-menu" to="/home" />
-          {/*
-          Use the render method to reduce the number of renders your component will have due to a route change.
-
-          Use the component prop when your component depends on the RouterComponentProps passed in automatically.
-        */}
           <Route path="/home" render={() => <HomePage />} exact={true} />
           <Route path="/radio" render={() => <RadioPage />} exact={true} />
           <Route path="/library" render={() => <LibraryPage />} exact={true} />
@@ -54,7 +48,7 @@ const TabMenu: React.FC = () => {
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
-    </>
+  </>
   );
 };
 

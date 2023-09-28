@@ -19,9 +19,10 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
+import "bootstrap/dist/css/bootstrap.css";
 
 /* Theme variables */
-import './theme/variables.css';
+import './App.css';
 import TabMenu from './pages/Tabs';
 setupIonicReact();
 
@@ -29,13 +30,8 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/tab-menu">
-          <TabMenu/>
-        </Route>
-        
+        <Route exact path="/" component={() => <Home />} />
+        <Route exact path="/tab-menu" component={()=> <TabMenu/>}/>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

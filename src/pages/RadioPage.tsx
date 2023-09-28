@@ -1,16 +1,21 @@
 import React from 'react';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/react';
-import Menu from '../components/Menu';
-
-const RadioPage = () => (
+import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+const RadioPage:React.FC = () => (
   <>
-  
-    <IonContent>
-      <div>
-        Radio content
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sit qui possimus voluptatum autem saepe suscipit provident ex nulla quas dignissimos, rerum, consectetur enim voluptatibus libero aperiam animi eius labore!radioooooooooooooooooooooooooooooooooooooooooooooooooooooo</p>
-      </div>
-    </IonContent>
+    <IonPage>
+      <IonHeader><Header/>
+        <IonToolbar>
+          <IonTitle>Radio</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      
+      <IonContent>
+        <p>¡Hola desde mi página en Ionic React! Radio</p>
+      </IonContent>
+      
+    </IonPage>
   </>
 );
 

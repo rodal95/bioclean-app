@@ -1,14 +1,19 @@
 import React from 'react';
 import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import Menu from '../components/Menu';
-export const HomePage = () => (
+import {Menu} from '../components/Menu';
+export const HomePage: React.FC = () => (
     <>
-        <IonContent>
-            <div>
-                Listen now content
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sit qui possimus voluptatum autem saepe suscipit provident ex nulla quas dignissimos, rerum, consectetur enim voluptatibus libero aperiam animi eius labore!listeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeennnn</p>
-            </div>
-        </IonContent>
+        <IonPage>
+            <IonHeader>
+                <IonToolbar>
+                    <IonTitle>Listen</IonTitle>
+                </IonToolbar>
+            </IonHeader>
+            <IonContent>
+                <p>¡Hola desde mi página en Ionic React!</p>
+                <Menu/>
+            </IonContent>
+        </IonPage>
     </>
 );
 

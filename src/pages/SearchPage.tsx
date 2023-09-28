@@ -1,17 +1,18 @@
 import React from 'react';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/react';
-import Menu from '../components/Menu';
+import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
-const SearchPage = () => (
+const SearchPage:React.FC = () => (
   <>
-    
-
-    <IonContent>
-      <div>
-        Search content
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sit qui possimus voluptatum autem saepe suscipit provident ex nulla quas dignissimos, rerum, consectetur enim voluptatibus libero aperiam animi eius labore! seaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarch</p>
-      </div>
-    </IonContent>
+    <IonPage>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>Search</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent>
+        <p>¡Hola desde mi página en Ionic React! Search</p>
+      </IonContent>
+    </IonPage>
   </>
 );
 
