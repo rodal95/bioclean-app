@@ -1,6 +1,8 @@
 import React from "react"
 
-export const Footer:React.FC = ()=>(
+export const Footer:React.FC = ()=>{
+
+    return(
     <>
         <nav id="navbar-example2" className="navbar bg-body-tertiary px-3 mb-3">
             <a className="navbar-brand" href="#">Navbar</a>
@@ -35,5 +37,5 @@ export const Footer:React.FC = ()=>(
             <h4 id="scrollspyHeading5">Fifth heading</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe numquam fuga placeat quasi esse, ipsa explicabo enim soluta cupiditate quod. Rem esse quae, quam suscipit facere maiores doloribus reprehenderit deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptates, et ex optio maiores porro ad dicta expedita reiciendis, adipisci cumque provident excepturi, itaque saepe odio. Voluptate esse corporis fugiat?</p>
         </div>
-    </>
-)
+    </>)
+}

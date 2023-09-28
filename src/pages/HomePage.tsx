@@ -1,7 +1,11 @@
 import React from 'react';
-import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import {Menu} from '../components/Menu';
-export const HomePage: React.FC = () => (
+ const HomePage: React.FC = () => {
+    const salir = () => {
+        window.location.href="/";
+      };
+    return (
     <>
         <IonPage>
             <IonHeader>
@@ -12,8 +16,12 @@ export const HomePage: React.FC = () => (
             <IonContent>
                 <p>¡Hola desde mi página en Ionic React!</p>
                 <Menu/>
+                <IonButton  onClick={salir}>
+                Salir
+                </IonButton>
             </IonContent>
         </IonPage>
-    </>
-);
+    </>)
+};
+export default HomePage
 

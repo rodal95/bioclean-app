@@ -1,14 +1,26 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { IonButton } from '@ionic/react';
-import { useHistory } from 'react-router-dom';
 import './Home.css';
 
 const Home: React.FC = () => {
-  const history = useHistory();
+
 
   const redirectToTabMenu = () => {
-    history.push('/tab-menu');
+    window.location.href="/tab-menu";
   };
+  const redirectPerroPage = ()=>{
+    window.location.href="/perro";
+  }
+  const redirectArmaduraPage = ()=>{
+    window.location.href="/armadura";
+  }
+  const redirectPizarronPage = ()=>{
+    window.location.href="/pizarron";
+  }
+  const redirectComputadoraPage = ()=>{
+    window.location.href="/computadora";
+  }
+  
 
   return (
     <IonContent>
@@ -21,8 +33,21 @@ const Home: React.FC = () => {
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum nostrum hic recusandae soluta voluptate, in iure rem vero provident eaque eos alias. Fugiat ex reiciendis illum voluptatum minus modi!
       </p>
       <IonButton  onClick={redirectToTabMenu}>
-        Ir al menú de tabs
+        Ir al menú Principal
       </IonButton>
+      <IonButton  onClick={redirectPerroPage}>
+        Ir a perro page
+      </IonButton>
+      <IonButton  onClick={redirectArmaduraPage}>
+        Ir a armadura page
+      </IonButton>
+      <IonButton  onClick={redirectPizarronPage}>
+        Ir a pizarron page
+      </IonButton>
+      <IonButton  onClick={redirectComputadoraPage}>
+        Ir a computadora page
+      </IonButton>
+      
     </IonContent>
   );
 };

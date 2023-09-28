@@ -1,6 +1,8 @@
 import React from 'react';
 
-export const Header: React.FC = () => (
+export const Header: React.FC = () => {
+
+    return(
     <nav className="navbar navbar-expand bg-body-tertiary">
         <div className="container-fluid">
             <a className="navbar-brand" href="#">Navbar</a>
@@ -11,5 +13,5 @@ export const Header: React.FC = () => (
                 <a className="nav-link disabled" aria-disabled="true">Disabled</a>
       </div>
   </div>
-</nav>
-);
+</nav>)
+};

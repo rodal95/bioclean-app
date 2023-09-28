@@ -5,8 +5,8 @@ import { IonReactRouter } from '@ionic/react-router';
 import { Route, Redirect } from 'react-router';
 
 import { playCircle, radio, library, search } from 'ionicons/icons';
-
-import {HomePage} from './HomePage';
+import Home from './Home';
+import HomePage from './HomePage';
 import RadioPage from './RadioPage';
 import LibraryPage from './LibraryPage';
 import SearchPage from './SearchPage';
@@ -19,6 +19,7 @@ const TabMenu: React.FC = () => {
       <IonTabs>
         <IonRouterOutlet>
           <Redirect exact path="/tab-menu" to="/home" />
+          <Route path="/" render={() => <Home />} exact={true} />
           <Route path="/home" render={() => <HomePage />} exact={true} />
           <Route path="/radio" render={() => <RadioPage />} exact={true} />
           <Route path="/library" render={() => <LibraryPage />} exact={true} />

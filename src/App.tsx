@@ -2,7 +2,11 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
-
+import ExternalPage from './pages/ExternalPage';
+import PerroPage from './pages/Perro';
+import ArmaduraPage from './pages/Armadura';
+import PizarronPage from './pages/Pizarron';
+import ComputadoraPage from './pages/Computadora';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -32,6 +36,11 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         <Route exact path="/" component={() => <Home />} />
         <Route exact path="/tab-menu" component={()=> <TabMenu/>}/>
+        <Route exact path="/external" component={()=> <ExternalPage/>}/>
+        <Route exact path="/perro" component={()=> <PerroPage/>}/>
+        <Route exact path="/armadura" component={()=> <ArmaduraPage/>}/>
+        <Route exact path="/pizarron" component={()=> <PizarronPage/>}/>
+        <Route exact path="/computadora" component={()=> <ComputadoraPage/>}/>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

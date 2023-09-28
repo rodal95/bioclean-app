@@ -2,13 +2,15 @@ import React from 'react';
 import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-const RadioPage:React.FC = () => (
+const RadioPage:React.FC = () => {
+  return(
   <>
     <IonPage>
-      <IonHeader><Header/>
+      <IonHeader>
         <IonToolbar>
           <IonTitle>Radio</IonTitle>
         </IonToolbar>
+        <Header/>
       </IonHeader>
       
       <IonContent>
@@ -16,7 +18,7 @@ const RadioPage:React.FC = () => (
       </IonContent>
       
     </IonPage>
-  </>
-);
+  </>)
+};
 
 export default RadioPage;
