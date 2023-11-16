@@ -4,12 +4,11 @@ import { IonReactRouter } from '@ionic/react-router';
 
 import { Route, Redirect } from 'react-router';
 
-import { playCircle, radio, library, search } from 'ionicons/icons';
+import { library, search, cart , pricetags, cash} from 'ionicons/icons';
 import Home from './Home';
 import HomePage from './HomePage';
 import RadioPage from './RadioPage';
 import LibraryPage from './LibraryPage';
-import SearchPage from './SearchPage';
 
 const TabMenu: React.FC = () => {
 
@@ -23,28 +22,22 @@ const TabMenu: React.FC = () => {
           <Route path="/home" render={() => <HomePage />} exact={true} />
           <Route path="/radio" render={() => <RadioPage />} exact={true} />
           <Route path="/library" render={() => <LibraryPage />} exact={true} />
-          <Route path="/search" render={() => <SearchPage />} exact={true} />
         </IonRouterOutlet>
 
         <IonTabBar slot="bottom">
           <IonTabButton tab="home" href="/home">
-            <IonIcon icon={playCircle} />
-            <IonLabel>Listen now</IonLabel>
+            <IonIcon icon={pricetags} />
+            <IonLabel>Productos</IonLabel>
           </IonTabButton>
 
           <IonTabButton tab="radio" href="/radio">
-            <IonIcon icon={radio} />
-            <IonLabel>Radio</IonLabel>
+            <IonIcon icon={cart} />
+            <IonLabel>Carrito</IonLabel>
           </IonTabButton>
 
           <IonTabButton tab="library" href="/library">
-            <IonIcon icon={library} />
-            <IonLabel>Library</IonLabel>
-          </IonTabButton>
-
-          <IonTabButton tab="search" href="/search">
-            <IonIcon icon={search} />
-            <IonLabel>Search</IonLabel>
+            <IonIcon icon={cash} />
+            <IonLabel>Pedidos</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
